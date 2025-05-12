@@ -1,0 +1,29 @@
+<%- contentFor('body') %>
+<br>
+<h1>Random Cocktail of the Day</h1>
+<p>Discover a new cocktail every day!</p>
+<br>
+
+<div class="cocktail-card">
+    <img src="<%= cocktail.strDrinkThumb %>" alt="<%= cocktail.strDrink %>" class="cocktail-image">
+    <div class="cocktail-details">
+        <h2><%= cocktail.strDrink %></h2>
+        
+        <div class="cocktail-meta">
+            <span>Category: <%= cocktail.strCategory %></span>
+            <span>Glass: <%= cocktail.strGlass %></span>
+        </div>
+
+        <h3>Ingredients:</h3>
+        <ul>
+            <% ingredients.forEach(function(ingredient) { %>
+                <li><%= ingredient.measure %> <%= ingredient.name %></li>
+            <% }); %>
+        </ul>
+
+        <div class="cocktail-actions">
+            <a href="/cocktail/<%= cocktail.idDrink %>" class="btn">View Details</a>
+            <button id="randomCocktail" class="btn">Another Random Cocktail</button>
+        </div>
+    </div>
+</div>

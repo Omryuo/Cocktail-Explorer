@@ -1,0 +1,21 @@
+<%- contentFor('body') %>
+<div class="error-page">
+    <div class="error-content">
+        <h1>Oops! Something Went Wrong</h1>
+        <div class="error-message">
+            <p><%= message %></p>
+        </div>
+        
+        <% if (error) { %>
+            <div class="error-details">
+                <h3>Error Details:</h3>
+                <pre><%= error %></pre>
+            </div>
+        <% } %>
+
+        <div class="error-actions">
+            <a href="/" class="btn">Go to Home</a>
+            <a href="/search" class="btn">Search Cocktails</a>
+        </div>
+    </div>
+</div>

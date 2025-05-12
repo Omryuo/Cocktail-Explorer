@@ -1,0 +1,30 @@
+<%- contentFor('body') %>
+<div class="cocktail-details-page">
+    <div class="cocktail-header">
+        <img src="<%= cocktail.strDrinkThumb %>" alt="<%= cocktail.strDrink %>" class="cocktail-main-image">
+        <div class="cocktail-title">
+            <h1><%= cocktail.strDrink %></h1>
+            <div class="cocktail-meta">
+                <span>Category: <%= cocktail.strCategory %></span>
+                <span>Glass: <%= cocktail.strGlass %></span>
+                <span>Type: <%= cocktail.strAlcoholic %></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cocktail-sections">
+        <div class="ingredients-section">
+            <h2>Ingredients</h2>
+            <ul>
+                <% ingredients.forEach(function(ingredient) { %>
+                    <li><%= ingredient.measure %> <%= ingredient.name %></li>
+                <% }); %>
+            </ul>
+        </div>
+
+        <div class="instructions-section">
+            <h2>Instructions</h2>
+            <p><%= cocktail.strInstructions %></p>
+        </div>
+    </div>
+</div>
