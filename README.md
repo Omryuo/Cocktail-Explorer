@@ -29,8 +29,8 @@ Cocktail Explorer is a web application that allows users to discover and explore
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/cocktail-explorer.git
-cd cocktail-explorer
+git clone https://github.com/Omryuo/Cocktail-Explorer.git
+cd Cocktail-Explorer
 ```
 
 2. Install dependencies:
