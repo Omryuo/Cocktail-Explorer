@@ -1,5 +1,8 @@
 # Cocktail Explorer 🍹
 
+## Live Demo
+🍹 **[Visit Cocktail Explorer](https://cocktail-explorer-4pk5.onrender.com/)**
+
 ## Project Description
 Cocktail Explorer is a web application that allows users to discover and explore various cocktails using the CocktailDB API. The application provides features like:
 - Random cocktail generation
@@ -48,8 +51,18 @@ npm run dev
 4. Open your browser and navigate to `http://localhost:3000`
 
 
-## API Reference
-This project uses the free CocktailDB API (https://www.thecocktaildb.com/api.php)
+## Deployment
+The application is deployed on Render at [cocktail-explorer-4pk5.onrender.com](https://cocktail-explorer-4pk5.onrender.com/).
+
+### Deployment Steps
+1. Create a Render account
+2. Connect GitHub repository
+3. Configure build settings
+   - Build command: `npm install`
+   - Start command: `node index.js`
+
+## API
+This project uses the free [TheCocktailDB API](https://www.thecocktaildb.com/api.php) to fetch cocktail recipes.
 
 ## License
 MIT License
